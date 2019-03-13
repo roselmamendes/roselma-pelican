@@ -11,7 +11,7 @@ body{
     font-size: 3em;
 }
 
-.post-titulo{
+.post-index-titulo{
     font-family: "Acme", sans serif !important;
     color: black;
 }
@@ -40,4 +40,22 @@ body{
         display: inherit;
     }
 
+}
+
+.post-titulo{
+  font-family: "Acme", sans serif;
+}
+
+.post-titulo h1{
+    font-size: 2em;
+}
+
+.card-content h2 {
+  font-family: "Acme", sans serif;
+  font-size: 2em;
+}
+
+.card-content p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
 }

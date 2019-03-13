@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+
+body{
+    background-color: #795548;
+}
+
+.blog-titulo{
+    text-align: center;
+    font-family: "Acme", sans serif;
+    color: #ffcc80;
+}
+
+.post-titulo{
+    font-family: "Acme", sans serif !important;
+}
+
+.outros-textos-link h3 a{
+    font-family: "Acme", sans serif !important;
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.social-share{
+    color: black;
+}

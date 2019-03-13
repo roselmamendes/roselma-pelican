@@ -3,7 +3,7 @@ Date: 2019-01-10 10:20
 Modified: 2019-01-10 10:20
 Category: Python
 Tags: pelican, publishing
-Slug: static-sites-pelican
+Slug: tec/static-sites-pelican
 Authors: Roselma Mendes
 Summary: Having a web site usigin Pelican
 Image: pelican.jpg

@@ -26,7 +26,7 @@
                     {% endif %}
 
                     <div class="card-content black-text">
-                        <span class="post-titulo card-title orange lighten-3">{{ articles[0].title }} </span>
+                        <a href="{{ articles[0].slug}}.html"><span class="post-titulo card-title orange lighten-3">{{ articles[0].title }} </span></a>
                       <p>{{articles[0].summary}}</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                   <div class="col s6">
                       <div class="card small">
                         <div class="card-content black-text">
-                            <span class="post-titulo card-title orange lighten-3">{{ post.title }}</span>
+                            <a href="{{ post.slug}}.html"><span class="post-titulo card-title orange lighten-3">{{ post.title }}</span></a>
                           <p>{{ post.summary }}</p>
                         </div>
                       </div>

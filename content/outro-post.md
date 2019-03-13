@@ -1,4 +1,5 @@
 Title: Outro Post
 Date: 2019-01-10 10:20
-Slug: outro-post
+Slug: feminismo-negro/outro-post
 Summary:
+Category: Feminismo Negro

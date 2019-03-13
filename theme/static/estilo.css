@@ -13,6 +13,7 @@ body{
 
 .post-titulo{
     font-family: "Acme", sans serif !important;
+    color: black;
 }
 
 .outros-textos-link h3 a{

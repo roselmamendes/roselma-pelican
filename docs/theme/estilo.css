@@ -8,6 +8,7 @@ body{
     text-align: center;
     font-family: "Acme", sans serif;
     color: #ffcc80;
+    font-size: 3em;
 }
 
 .post-titulo{
@@ -22,4 +23,20 @@ body{
 
 .social-share{
     color: black;
+}
+
+.sobre-responsive{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sobre {
+        display: none;
+    }
+
+    .sobre-responsive{
+        display: inherit;
+    }
+
 }

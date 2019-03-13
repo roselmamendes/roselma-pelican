@@ -7,6 +7,7 @@ SITENAME = 'Blog da Roselma Mendes'
 SITEURL = ''
 
 PATH = 'content'
+OUTPUT_PATH = 'docs'
 
 TIMEZONE = 'America/Recife'
 

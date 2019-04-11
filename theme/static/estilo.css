@@ -48,11 +48,13 @@ body{
 
 .post-titulo h1{
     font-size: 2em;
+    margin: 0 0 1.68rem 0;
 }
 
 .card-content h2 {
   font-family: "Acme", sans serif;
   font-size: 2em;
+  margin: 0 0 20px 0;
 }
 
 .card-content p{

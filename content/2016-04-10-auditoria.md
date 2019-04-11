@@ -2,7 +2,7 @@ Title: Logging
 Date: 2018-11-02
 Modified:  2018-11-02
 Summary: Se você não loga na sua aplicação, eu aconselho começar a faze-lo.
-Category: tec
+Category: Monitoramento
 Tags:  auditoria, logs, log estruturado
 Image:/logging/print-log.png
 Status: published

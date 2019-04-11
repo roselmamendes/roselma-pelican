@@ -5,7 +5,7 @@ Category: tec
 Tags: monitoring, logging, alerts, delivery, deploy 
 Summary: ""
 Slug: tec/monitoring
-Status: published
+Status: draft
 
 On the project I am working on, we were facing instability in our automated flows. Basically, we have flows to provide access to some cloud services helping people to get most common assets to deploy their application. These flows are automated using Celery and Rabbitmq, so they are composed by tasks that run in a determined order.
 

@@ -7,6 +7,7 @@ Slug: tec/static-sites-pelican
 Authors: Roselma Mendes
 Summary: Having a web site usigin Pelican
 Image: pelican.jpg
+Status: draft
 
 ## Pelican
 

@@ -1,10 +1,9 @@
-Title:  "Docker no desenvolvimento web (nodejs)"
-modified:   2018-02-01
-categories: tec
-tags: [docker, node, contêineres]
-image:
-  feature: docker-dev-web/group_5622_0.png
-excerpt: "Como utilizar conteinerização para aplicações web e qual a vantagem disso."
+Title:  Docker no desenvolvimento web (nodejs)
+Modified: 2018-02-01
+Category: tec
+Tags: docker, node, contêineres
+Image: /docker-dev-web/group_5622_0.png
+Summary: Como utilizar conteinerização para aplicações web e qual a vantagem disso.
 Status: draft
 
 ## Conteinerização

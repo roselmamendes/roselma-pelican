@@ -1,13 +1,11 @@
-Title:  "Estamos construindo tecnologias racistas?"
-modified:   2018-04-14
-categories: tec
-tags: [bias algorithm, racismo, IA, programação]
-image:
-  feature: /racismo-tecnologia/start-trek-old-version.jpg
-  credit: Uhura - Star Trek
-  creditlink: https://pt.wikipedia.org/wiki/Uhura
-excerpt: "Enquanto tecnologistas qual nossa parcela de contribuição quanto as injustiças sociais? Eu e tantas Mulheres Negras sabemos qual o papel que uma tecnologia racista tem em nossas vidas."
-Status: draft
+Title: Estamos construindo tecnologias racistas?
+Modified: 2018-04-14
+Category: tec
+Tags: bias algorithm, racismo, IA, programação
+Image: /racismo-tecnologia/start-trek-old-version.jpg
+Summary: Enquanto tecnologistas qual nossa parcela de contribuição quanto as injustiças sociais?
+Status: published
+Slug: tec/racismo-tecnologia
 
 Enquanto tecnologistas qual nossa parcela de contribuição quanto as injustiças sociais?
 
@@ -31,10 +29,7 @@ Há uma frase da [Angela Davis](https://www.cartacapital.com.br/sociedade/angela
 
 Eu e tantas outras Mulheres Negras sabemos o papel que uma tecnologia racista tem em nossas vidas.
 
-<figure>
-	<a href="https://youtu.be/_dg86g-QlM0"><img src="/images/racismo-tecnologia/franchesca ramsey equality.gif" alt="image"></a>
-	<figcaption>https://youtu.be/_dg86g-QlM0 tem como colocar a legenda em portugues</figcaption>
-</figure>
+![](../theme/images/racismo-tecnologia/franchesca-ramsey-equality.gif)
 
 <br>
 <b>Aliado/Aliada são verbos.</b> 
@@ -82,11 +77,7 @@ Existem muitas iniciativas voltadas pra discuti sobre o viés algortimico. Algum
 
 Quando falamos de não construi tecnologias racistas, isso significa também equipes racialmente diversas, onde pessoas negras possam ter suas vozes escutadas. Pois somos, contra tudo e todos, programadoras, cientistas, engenheiras, analistas, e tudo o mais.
 
-<figure>
-	<a href="http://www.startrek.com/database_article/burnham"><img src="/images/racismo-tecnologia/burnham-tardigrade-scans.jpg" alt="image"></a>
-	<figcaption>Michael Burnham - Star Trek</figcaption>
-</figure>
-
+![Michael Burnham - Star Trek](../theme/images/racismo-tecnologia/burnham-tardigrade-scans.jpg)
 
 ## Links
 

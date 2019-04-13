@@ -75,12 +75,6 @@ body{
     margin-right: auto;
 }
 
-.card-content ol{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2em;
-    margin-top: 0;
-}
-
 .card-content ul{
     list-style-type: circle;
 }
@@ -90,8 +84,16 @@ body{
 }
 
 .card-content .highlight span{
-    float: left;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
 }
+/*https://stackoverflow.com/questions/3949762/how-to-wrap-text-using-css*/
 
 .card-content pre:last-child{
     padding-bottom: 20px;

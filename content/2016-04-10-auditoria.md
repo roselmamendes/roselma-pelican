@@ -71,13 +71,15 @@ E mais importante: tenha logs!
 
 Gregory Szorc lista o que ele acredita que sejam as situações onde logs são usados:
 
-<ol>
-  <ul>1. Registro de erros da aplicação (exceções e stack traces)</ul>
-  <ul>2. Informação em baixo nível para debug ou análise humana</ul>
-  <ul>3. Monitoramento da aplicação (inclui métricas e alertas)</ul>
-  <ul>4. Analise de negócio (uso de dados de log para tomadas de decisão)</ul>
-  <ul>5. Auditoria de segurança</ul>
-</ol>
+1. Registro de erros da aplicação (exceções e stack traces)
+
+2. Informação em baixo nível para debug ou análise humana
+
+3. Monitoramento da aplicação (inclui métricas e alertas)
+
+4. Analise de negócio (uso de dados de log para tomadas de decisão)
+
+5. Auditoria de segurança
 
 Tem muita discussão na [rede](https://www.google.com/search?hl=pt&q=logging%20code) acerca do que deve ser logado ou não. [Algumas](https://blog.codinghorror.com/the-problem-with-logging/) pessoas só logam exceções, [outras](http://stackify.com/smarter-errors-logs-putting-data-work-2/) falam de logar tudo (paramêtros das funções, funcionalidade, etc), mas com moderação.
 

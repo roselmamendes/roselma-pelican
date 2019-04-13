@@ -124,13 +124,22 @@
 <h2>O que logar?</h2>
 <p>Gregory Szorc lista o que ele acredita que sejam as situações onde logs são usados:</p>
 <ol>
-  <ul>1. Registro de erros da aplicação (exceções e stack traces)</ul>
-  <ul>2. Informação em baixo nível para debug ou análise humana</ul>
-  <ul>3. Monitoramento da aplicação (inclui métricas e alertas)</ul>
-  <ul>4. Analise de negócio (uso de dados de log para tomadas de decisão)</ul>
-  <ul>5. Auditoria de segurança</ul>
+<li>
+<p>Registro de erros da aplicação (exceções e stack traces)</p>
+</li>
+<li>
+<p>Informação em baixo nível para debug ou análise humana</p>
+</li>
+<li>
+<p>Monitoramento da aplicação (inclui métricas e alertas)</p>
+</li>
+<li>
+<p>Analise de negócio (uso de dados de log para tomadas de decisão)</p>
+</li>
+<li>
+<p>Auditoria de segurança</p>
+</li>
 </ol>
-
 <p>Tem muita discussão na <a href="https://www.google.com/search?hl=pt&amp;q=logging%20code">rede</a> acerca do que deve ser logado ou não. <a href="https://blog.codinghorror.com/the-problem-with-logging/">Algumas</a> pessoas só logam exceções, <a href="http://stackify.com/smarter-errors-logs-putting-data-work-2/">outras</a> falam de logar tudo (paramêtros das funções, funcionalidade, etc), mas com moderação.</p>
 <p>Para mim, além das dicas do Szorc, <strong>log tem que ter contexto</strong>. Muito mais que ter um <a href="http://stackoverflow.com/a/3988794">stack trace</a>, tem muito valor você colocar mais informação para dar contexto de onde veio essa exceção. Por exemplo, uma mensagem do tipo "Verificando dados do usuário XPTO" junto a exceção, mostra que tipo de atividade o programa realizou quando a exceção aconteceu e o registro manipulado. </p>
 <p>E logs não só necessários quando o programa lança erros, mas também quando tudo vai bem no código. Afinal, tudo está bem em um momento e no outro não. Criar uma "timeline" do que acontece no seu sistema ajudará bastante na resolução de problemas, principalmente em produção. E os problemas podem se manifestar sem exceções em logs, como uma soma errada do total de uma nota em um site de e-commerce, por exemplo.</p>

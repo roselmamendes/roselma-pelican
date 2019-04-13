@@ -1,10 +1,11 @@
-Title:  "Deploying an application with Google App Engine"
-Modified:   2019-02-06
-Categories: tec
+Title:  Deploying an application with Google App Engine
+Modified: 2019-02-06
+Category: DevOps
 Tags: GCP, GAE, Monitoring, KMS
-Summary: "Learning how to deploy a Flask application in Google App Engine."
-Image:/google-app-engine/print-conteudo-tech-negro.png
+Summary: Learning how to deploy a Flask application in Google App Engine.
+Image: /google-app-engine/print-conteudo-tech-negro.png
 Status: draft
+Slug: tec/google-app-engine
 
 ## Google App Engine - GAE
 
@@ -22,10 +23,9 @@ First of all, the project needs to have an [app.yaml](https://cloud.google.com/a
 
 For conteudo-tech-negro I have the follow:
 
-```yaml
-runtime: python37
-entrypoint: gunicorn app:app && flask db migrate && flask db upgrade
-```
+	:::yaml
+	runtime: python37
+	entrypoint: gunicorn app:app && flask db migrate && flask db upgrade
 
 **On Google Console create a project**
 
@@ -37,24 +37,15 @@ In this post, I use the Google Console UI.
 
 To create a new project, go to the name of the project beside the title "Google Cloud Platform" and click in the arrow. It will show a window with the list of projects and a button "New project".
 
-<figure>
-	<img src="/images/google-app-engine/google-console-new-project.png" alt="image">
-	<figcaption>Google Console - list of projects</figcaption>
-</figure>
+![Google Console - list of projects](../theme/images/google-app-engine/google-console-new-project.png)
 
 **Create an app on the Google App Engine**
 
 With the project selected, on the Cloud Shell use the command `glcoud app create` or on App Engine page click on "Create an app". You need to choose a region, the language and [the environment](https://cloud.google.com/appengine/docs/the-appengine-environments). I am using the standard environment.
 
-<figure>
-	<img src="/images/google-app-engine/google-cloud-shell-button.png" alt="image">
-	<figcaption>Cloud Shell button, it is on the right up of the screen</figcaption>
-</figure>
+![Cloud Shell button, it is on the right up of the screen](../theme/images/google-app-engine/google-cloud-shell-button.png)
 
-<figure>
-	<img src="/images/google-app-engine/google-shell.png" alt="image">
-	<figcaption>Google Cloud Shell</figcaption>
-</figure>
+![Google Cloud Shell](../theme/images/google-app-engine/google-shell.png)
 
 **Clone the project to the environment of Cloud shell**
 
@@ -64,15 +55,9 @@ Open the Cloud shell and run the git clone of the project. On the project folder
 
 But my app got errors...
 
-<figure>
-	<img src="/images/google-app-engine/app-engine-chart-summary.png" alt="image">
-	<figcaption>Summary Chart on App Engine Painel</figcaption>
-</figure>
+![Summary Chart on App Engine Painel](../theme/images/google-app-engine/app-engine-chart-summary.png)
 
-<figure>
-	<img src="/images/google-app-engine/app-engine-found-errors.png" alt="image">
-	<figcaption>App Errors on App Engine Painel</figcaption>
-</figure>
+![App Errors on App Engine Painel](../theme/images/google-app-engine/app-engine-found-errors.png)
 
 ## Monitoring tools
 
@@ -86,11 +71,7 @@ To see the logs of the app, on the Google Console UI, on the menu at left side, 
 
 As the page is splitted in two sections (up and down), at the down section click on Logs. It will show all the last logs.
 
-<figure>
-	<img src="/images/google-app-engine/stackdriver-logs.png" alt="image">
-	<figcaption>Logs on Stackdriver painel</figcaption>
-</figure>
-
+![Logs on Stackdriver painel](../theme/images/google-app-engine/stackdriver-logs.png)
 
 **Error Reporting**
 
@@ -98,19 +79,13 @@ Other Stackdriver tool is the Error reporting. It shows the identified errors in
 
 If I clicked in one of those, it opens a page with more details about the error log.
 
-<figure>
-	<img src="/images/google-app-engine/stackdriver-error-reporting-detail.png" alt="image">
-	<figcaption>Detailed error log on Error Reporting painel</figcaption>
-</figure>
+![Detailed error log on Error Reporting painel](../theme/images/google-app-engine/stackdriver-error-reporting-detail.png)
 
 It is possible to link an error log with an issue in your repository.
 
 **Alerts**
 
-<figure>
-	<img src="/images/google-app-engine/stackdriver-policy.png" alt="image">
-	<figcaption>Policy creation page</figcaption>
-</figure>
+![Policy creation page](../theme/images/google-app-engine/stackdriver-policy.png)
 
 To create alerts on GCP it is necessary to create a workspace for the project. There you need to create policies where you can define conditions, notifications and any type of documentation you want to send with the alert.
 
@@ -132,9 +107,9 @@ After reading many times the Google documentation and stackoverflow, I got this 
 
 When deploying it to app engine:
  
- > a. I need to decrypt the env.yaml;
+   a. I need to decrypt the env.yaml;
  
- > b. call the command `gcloud app deploy` which will use the env.yaml to load the environment variables.
+   b. call the command `gcloud app deploy` which will use the env.yaml to load the environment variables.
 
 Other approaches I found on the Internet:
 

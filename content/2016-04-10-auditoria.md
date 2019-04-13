@@ -8,7 +8,7 @@ Image: /logging/print-log.png
 Status: published
 Slug: tec/logging
 ---
-Todo a aplicação deveria "falar" sobre o que está acontecendo durante sua execução: quando a pessoa clica em um botão, quando alguém faz um request a uma API, quando a busca no banco gera um erro.
+Toda a aplicação deveria "falar" sobre o que está acontecendo durante sua execução: quando a pessoa clica em um botão, quando alguém faz um request a uma API, quando a busca no banco gera um erro.
 
 Por isso logs existem. Para nos contar o que está acontecendo em nossas aplicações e é uma das ferramentas dentro de monitoramento de sistemas.
 
@@ -21,10 +21,8 @@ Se você é uma pessoa desenvolvedora, e reparar, logs fazem parte do nosso dia-
 > "(Logs são) um fluxo de mensagens distintas geradas a partir da execução de um programa."
 
 Logs podem ser guardados em simples arquivos de texto, como .npm-log do NPM. e/ou também mostrados em terminais/consoles.
-<figure>
-	<img src="/images/logging/example.png" alt="image">
-	<figcaption>Figura mostrando a tela de um terminal com mensagens de log.</figcaption>
-</figure>
+
+![Figura mostrando a tela de um terminal com mensagens de log.](../theme/images/logging/example.png)
 
 A simples chamada de um print() do Python, ou system.out.println() do Java, informando o que está ocorrendo já é um log.
 

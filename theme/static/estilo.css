@@ -77,6 +77,7 @@ body{
 
 .card-content ul{
     list-style-type: circle;
+    padding-left: 40px;
 }
 
 .card-content ul li{

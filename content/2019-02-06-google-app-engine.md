@@ -4,7 +4,7 @@ Category: DevOps
 Tags: GCP, GAE, Monitoring, KMS
 Summary: Learning how to deploy a Flask application in Google App Engine.
 Image: /google-app-engine/print-conteudo-tech-negro.png
-Status: draft
+Status: published
 Slug: tec/google-app-engine
 
 ## Google App Engine - GAE
@@ -107,9 +107,9 @@ After reading many times the Google documentation and stackoverflow, I got this 
 
 When deploying it to app engine:
  
-   a. I need to decrypt the env.yaml;
+* a. I need to decrypt the env.yaml;
  
-   b. call the command `gcloud app deploy` which will use the env.yaml to load the environment variables.
+* b. call the command `gcloud app deploy` which will use the env.yaml to load the environment variables.
 
 Other approaches I found on the Internet:
 

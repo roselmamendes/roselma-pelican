@@ -74,6 +74,12 @@ body{
     margin-right: auto;
 }
 
+.card-content ol{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
 .card-content ul{
     list-style-type: circle;
 }

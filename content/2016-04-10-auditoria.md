@@ -38,18 +38,17 @@ Mas para um agregador de logs, o que seria o usuário e a ação que aconteceu?
 
 <b> Um log desestruturado</b>
 
-{% highlight javascript %}
-console.log(username + " successfully logged in")
-{% endhighlight %}
+    :::javascript
+    console.log(username + " successfully logged in")
 
 Na vida real essa mensagem estará no meio de milhares de linhas de log, que podem ter esse conjunto de palavras utilizadas em vários momentos. O que talvez não seja fácil de pesquisar no agregador da sua escolha, trazendo "ruído" nos resultados.
 
 <b> Já com log estruturado</b>
 
 Imprimindo...
-{% highlight javascript %}
-logger.info("successful_login", who=username)
-{% endhighlight %}
+
+    :::javascript
+    logger.info("successful_login", who=username)
 
 Do primeiro para o segundo código nota-se maneiras diferentes de imprimir as informações. Na primeira, imprimimos uma frase. Já na segunda montamos nosso log com campos.
 
@@ -57,9 +56,8 @@ Quando falamos de logging estruturado, precisamos que os dados de uma mensagem d
 
 Eu posso ter a mensagem de log enviada a um sistema de monitoramento da seguinte maneira:
 
-{% highlight javascript %}
-[1354317157.034534, "INFO", "sucessful_login", {"who": "Roselma"}]
-{% endhighlight %}
+    :::javascript
+    [1354317157.034534, "INFO", "sucessful_login", {"who": "Roselma"}]
 
 <b>Tá! Mas por que eu devo me importar com log estruturado afinal?</b>
 

@@ -82,9 +82,6 @@
      data-size="small">
     Tweet
   </a>
-
-  <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: pt_BR</script>
-  <script type="IN/Share" data-url="tec/logging.html"></script>
   </div>            <p>Toda a aplicação deveria "falar" sobre o que está acontecendo durante sua execução: quando a pessoa clica em um botão, quando alguém faz um request a uma API, quando a busca no banco gera um erro.</p>
 <p>Por isso logs existem. Para nos contar o que está acontecendo em nossas aplicações e é uma das ferramentas dentro de monitoramento de sistemas.</p>
 <h2>Logging</h2>
@@ -102,18 +99,24 @@
 <p><i>Roselma successfully logged in</i></p>
 <p>Mas para um agregador de logs, o que seria o usuário e a ação que aconteceu?</p>
 <p><b> Um log desestruturado</b></p>
-<p _="%" endhighlight>{% highlight javascript %}
-console.log(username + " successfully logged in")</p>
+<div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">username</span> <span class="o">+</span> <span class="s2">&quot; successfully logged in&quot;</span><span class="p">)</span>
+</pre></div>
+
+
 <p>Na vida real essa mensagem estará no meio de milhares de linhas de log, que podem ter esse conjunto de palavras utilizadas em vários momentos. O que talvez não seja fácil de pesquisar no agregador da sua escolha, trazendo "ruído" nos resultados.</p>
 <p><b> Já com log estruturado</b></p>
-<p _="%" endhighlight>Imprimindo...
-{% highlight javascript %}
-logger.info("successful_login", who=username)</p>
+<p>Imprimindo...</p>
+<div class="highlight"><pre><span></span><span class="nx">logger</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;successful_login&quot;</span><span class="p">,</span> <span class="nx">who</span><span class="o">=</span><span class="nx">username</span><span class="p">)</span>
+</pre></div>
+
+
 <p>Do primeiro para o segundo código nota-se maneiras diferentes de imprimir as informações. Na primeira, imprimimos uma frase. Já na segunda montamos nosso log com campos.</p>
 <p>Quando falamos de logging estruturado, precisamos que os dados de uma mensagem de log sejam montados em uma certa estrutura. </p>
 <p>Eu posso ter a mensagem de log enviada a um sistema de monitoramento da seguinte maneira:</p>
-<p _="%" endhighlight>{% highlight javascript %}
-[1354317157.034534, "INFO", "sucessful_login", {"who": "Roselma"}]</p>
+<div class="highlight"><pre><span></span><span class="p">[</span><span class="mf">1354317157.034534</span><span class="p">,</span> <span class="s2">&quot;INFO&quot;</span><span class="p">,</span> <span class="s2">&quot;sucessful_login&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;who&quot;</span><span class="o">:</span> <span class="s2">&quot;Roselma&quot;</span><span class="p">}]</span>
+</pre></div>
+
+
 <p><b>Tá! Mas por que eu devo me importar com log estruturado afinal?</b></p>
 <p>Hoje em dia, depois de muito tempo que este post foi escrito (em 2016), a necessidade que vejo para usarmos logs estruturados é facilitar nossa vida quando usando <a href="https://stackify.com/log-aggregation-101/">agregadores de logs</a>. Estes agregadores tanto oferecem a busca nos logs, bem como a criação de alertas. Estes alertas podem ser criados usando uma query baseada na estrutura dos seus logs.</p>
 <p>A minha dica é: primeiro <strong>use um agregador de logs</strong>, e então procure usar bibliotecas da sua linguagem para logs, ou entenda como seu agregador precisa ler as informações. Mas com certeza me parece a melhor opção tirar proveito das bibliotecas, que geralmente já estruturam a informação logada para usar com ferramentas de monitoramento.</p>
@@ -143,9 +146,6 @@ logger.info("successful_login", who=username)</p>
      data-size="small">
     Tweet
   </a>
-
-  <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: pt_BR</script>
-  <script type="IN/Share" data-url="tec/logging.html"></script>
   </div>          </div>
 
         </div>

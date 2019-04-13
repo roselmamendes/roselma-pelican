@@ -1,4 +1,4 @@
-# Blog with Pelican and Flask
+# Blog with Pelican
 
 ## [Contributing](contributing.md)
 

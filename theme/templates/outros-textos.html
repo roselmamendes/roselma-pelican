@@ -32,6 +32,10 @@
                   </div>
                   {% endfor %}
 
+                  {% if not articles[3:] %}
+                  <p>Em processo de restaurar os outros textos.</p>
+                  {% endif %}
+
               </div>
 
               {% include "sobre-responsive.html" %}
